@@ -50,7 +50,7 @@ extension NSAttributedString {
     public struct EnumerateAttributesSequence: Sequence {
         public typealias Element = (range: NSRange, attributes: [NSAttributedString.Key: Any])
         
-        let _makeIterator: () -> Iterator
+        public let _makeIterator: () -> Iterator
         
         public struct Iterator: IteratorProtocol {
             let attributedString: NSAttributedString
@@ -138,7 +138,7 @@ extension NSAttributedString {
             }
         }
         
-        public func makeIterator() -> Iterator {
+        public consuming func makeIterator() -> Iterator {
             _makeIterator()
         }
     }
