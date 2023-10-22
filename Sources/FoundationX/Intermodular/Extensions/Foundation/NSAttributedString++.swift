@@ -138,7 +138,7 @@ extension NSAttributedString {
             }
         }
         
-        public consuming func makeIterator() -> Iterator {
+        public func makeIterator() -> Iterator {
             _makeIterator()
         }
     }
