@@ -22,8 +22,8 @@ extension ClosureCaptureSyntax {
             leadingTrivia: nil,
             specifier: nil,
             name: effectiveName,
+            equal: nil,
             expression: expression,
-            initializer: nil,
             trailingComma: nil,
             trailingTrivia: nil
         )
